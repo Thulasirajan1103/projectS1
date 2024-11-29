@@ -3,6 +3,7 @@ import logo from "./assets/logo.jpg";
 import image1 from "./assets/img1.jpg";
 import image2 from "./assets/img2.jpg";
 
+
 const images = [image1, image2];
 
 function Profile() {
