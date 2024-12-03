@@ -14,15 +14,7 @@ function Layout({ children }) {
         <NavLink to="/list" activeClassName="active-link">
           Dashboard
         </NavLink>
-        <NavLink to="/admin-login" activeClassName="active-link">
-          AdminLogin
-        </NavLink>
-        <NavLink to="/admin-dashboard" activeClassName="active-link">
-          AdminDashboard
-        </NavLink>
-        <NavLink to="/admin" activeClassName="active-link">
-          AdminAuth
-        </NavLink>
+       
       </div>
 
       <div className="content">{children}</div>
