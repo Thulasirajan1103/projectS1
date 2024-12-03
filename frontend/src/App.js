@@ -6,6 +6,8 @@ import {
   Navigate,
 } from "react-router-dom";
 import ItemForm from "./itemForm";
+import AdminAuth from './AdminAuth';
+import AdminSignUp from "./AdminSignUp.js";
 import AdminLogin from "./AdminLogin";
 import AdminDashboard from "./AdminDashboard";
 import ItemList from "./itemList";
@@ -76,7 +78,9 @@ function App() {
           <Route path="/attendance/:id" element={<Attendance />} />
 
           <Route path="/profile" element={<Profile />} />
+          <Route path="/admin" element={<AdminAuth />} />
           <Route path="/admin-login" element={<AdminLogin />} />
+          <Route path="/AdminSignUp" element={<AdminSignUp/>}/>
           <Route path="/admin-dashboard" element={<AdminDashboard />} />
 
           <Route path="/" element={<Navigate to="/list" />} />
