@@ -5,13 +5,13 @@ function Layout({ children }) {
   return (
     <div>
       <div className="sidenav">
-        <NavLink to="/profile" activeClassName="active-link">
+        <NavLink to="/profile" className={({ isActive }) => (isActive ? "active-link" : "")}>
           Home
         </NavLink>
-        <NavLink to="/form" activeClassName="active-link">
+        <NavLink to="/form" className={({ isActive }) => (isActive ? "active-link" : "")}>
           Register
         </NavLink>
-        <NavLink to="/list" activeClassName="active-link">
+        <NavLink to="/list" className={({ isActive }) => (isActive ? "active-link" : "")}>
           Dashboard
         </NavLink>
        
